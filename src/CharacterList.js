@@ -16,12 +16,12 @@ import CharacterCard from './CharacterCard'
 //     )
 // }
 
-export default function CharacterList({characters}) {
+export default function CharacterList({characters, onDeleteCharacter}) {
     console.log(characters);
     return <div className='cards'>
         {characters.map((character) => {
             return (
-                <CharacterCard key={character.id} character={character}/>
+                <CharacterCard key={character.id} character={character} onDeleteCharacter={onDeleteCharacter}/>
             )
         })}
     </div>
