@@ -1,3 +1,8 @@
+@font-face {
+  font-family: get_schwifty;
+  src: url(fonts/get_schwifty.ttf);
+}
+
 .App {
   text-align: center;
 }
@@ -38,7 +43,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: get_schwifty;
   font-size: 16px;
   background-color: rgb(26, 109, 105);
   font-size: 20px;
@@ -61,7 +66,7 @@ body {
   text-align: center;
   margin-top: 50px;
   font-size: 50px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: get_schwifty;
   color: rgb(153, 228, 39);
 }
 
@@ -69,15 +74,15 @@ body {
   text-align: center;
   margin-top: 50px;
   font-size: 50px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: get_schwifty;
   color: rgb(153, 228, 39);
 }
 
-.CharacterForm {
+.Header{
   text-align: center;
   margin-top: 50px;
   font-size: 50px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: get_schwifty;
   color: rgb(153, 228, 39);
 }
 
@@ -93,7 +98,7 @@ body {
 .Paragraph {
   text-align: center;
   font-size: 30px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: get_schwifty;
   color: rgb(5, 225, 225);
 }
 
@@ -164,7 +169,7 @@ body {
   text-align: center; 
 }
 
-.CharacterForm {
+.Header {
   padding: 2rem 1rem;
   margin: 2rem 0;
   background-color: rgba(181, 250, 181, 0.5);

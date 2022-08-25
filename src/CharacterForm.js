@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import CharacterList from './CharacterList'
+import {Link, Navigate, Route, Routes, useNavigate} from "react-router-dom"
 
 export default function CharacterForm() {
+  const navigate = useNavigate();
   const [characters, setCharacters] = useState([]) 
   const [name, setName] = useState("")
   const [image, setImage] = useState("")
@@ -29,6 +30,7 @@ export default function CharacterForm() {
 
   function handleSubmit(e) {
     e.preventDefault();
+    navigate('/characters', {replace: true});
     fetch("http://localhost:6001/results", {
     method: "POST",
     headers: {
@@ -77,7 +79,7 @@ export default function CharacterForm() {
   return (
     <>
     <br></br>
-    <div className='CharacterForm'>Character Form</div>
+    <div className='Header'>Character Form</div>
     <form className="form" onSubmit={handleSubmit}>
       <input onChange = {(e) => setName(e.target.value)} value={name} type="text" name="name" placeholder="Character Name" />
       <br></br>
@@ -95,9 +97,11 @@ export default function CharacterForm() {
       <br></br>
       <br></br>
       <br></br>
+      
       <button className="button"type="submit">Add Character</button>
       
     </form>
+    
     
    
     </>

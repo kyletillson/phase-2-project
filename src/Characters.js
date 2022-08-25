@@ -23,7 +23,7 @@ export default function Characters() {
   return (
     <>
     <br></br>
-    <div className='Characters'>Characters</div>
+    <div className='Header'>Characters</div>
     <Search searchTerm={searchTerm} onSearchChange={setSearchTerm}/>
     <CharacterList characters={displayedCharacters}/>
     </>
