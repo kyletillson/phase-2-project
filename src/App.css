@@ -48,7 +48,9 @@ body {
   background-color: rgb(26, 109, 105);
   font-size: 20px;
   margin: 0px;
+
 }
+
 
 .Link {
   /* display: inline-block; */
@@ -234,3 +236,66 @@ input {
 .searchInput {
   margin: 0 auto; 
 }
+
+.modeButton {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  height: 60px;
+  position: absolute;
+  right: 10px;
+}
+
+.modeButton:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.modeButton:hover {
+  background-color: #3e8e41
+}
+
+/* #light {
+  background-color: rgb(48, 192, 185);
+}
+
+#dark {
+  background-color: rgb(26, 109, 105);
+}  */
+
+
+#light .Paragraph {
+  color: rgb(3, 78, 78); 
+}
+
+#light .Header {
+  color: rgb(98, 157, 11);
+}
+
+.switch {
+  position: absolute;
+  right: 10px;
+}
+
+#light .card {
+  color: rgb(4, 125, 125);
+}
+
+.label {
+  font-size: 30px;
+}
+
+#light {
+  background-color:  rgb(48, 192, 185);
+}
+
