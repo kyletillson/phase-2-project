@@ -8768,6 +8768,16 @@
       ],
       "url": "https://rickandmortyapi.com/api/character/400",
       "created": "2018-04-15T17:36:11.295Z"
+    },
+    {
+      "name": "Alien",
+      "image": "https://rickandmortyapi.com/api/character/avatar/6.jpeg",
+      "status": "Alive",
+      "location": {
+        "name": "Mars"
+      },
+      "species": "Alien",
+      "id": 401
     }
   ]
 }
